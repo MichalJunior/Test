@@ -1,6 +1,7 @@
 package zadanie1;
 
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         int appleQuantity;
@@ -21,7 +22,7 @@ public class Main {
             }
             if (orangeQuantity > appleQuantity) {
                 appleQuantity++;
-            }else if (orangeQuantity == appleQuantity) {
+            } else if (orangeQuantity == appleQuantity) {
                 orangeQuantity++;
             }
         }

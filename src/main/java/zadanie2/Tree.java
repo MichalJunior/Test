@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tree {
-    public static List<Integer> list = new ArrayList<>();
+    public List<Integer> list = new ArrayList<>();
 
     public void addValue(int x) {
         list.add(x);
@@ -30,7 +30,7 @@ public class Tree {
         System.out.println(minValue);
     }
 
-    public void Contain(int value) {
+    public void contain(int value) {
         for (int number : list) {
             if (number == value) {
                 System.out.println("true");
