@@ -1,10 +1,8 @@
 package zadanie1;
 
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-
         int appleQuantity;
         int orangeQuantity;
         int moneyQuantity;
@@ -17,26 +15,25 @@ public class Main {
         moneyQuantity = scanner.nextInt();
 
         for (int i = moneyQuantity; i > 0; i--) {
+
             if (appleQuantity > orangeQuantity) {
                 orangeQuantity++;
             }
             if (orangeQuantity > appleQuantity) {
                 appleQuantity++;
-            } else if (orangeQuantity == appleQuantity) {
+            }else if (orangeQuantity == appleQuantity) {
                 orangeQuantity++;
             }
         }
+        int totalQuantity;
         if (appleQuantity > orangeQuantity) {
-            int totalQuantity = appleQuantity - orangeQuantity;
-            System.out.println("Minimalna różnica: " + totalQuantity);
+            totalQuantity = appleQuantity - orangeQuantity;
         } else {
-            int totalQuantity = orangeQuantity - appleQuantity;
-            System.out.println("Minimalna różnica: " + totalQuantity);
+            totalQuantity = orangeQuantity - appleQuantity;
         }
+        System.out.println("Minimalna różnica: " + totalQuantity);
         System.out.println("Ilośc Jabłek po zakupie: " + appleQuantity);
         System.out.println("Ilość pomarańczy po zakupie: " + orangeQuantity);
-
-
     }
 }
 
