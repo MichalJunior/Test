@@ -1,3 +1,5 @@
+package zadanie1;
+
 import java.util.Scanner;
 
 public class Main {
@@ -21,12 +23,9 @@ public class Main {
             if (orangeQuantity > appleQuantity) {
                 appleQuantity++;
             } else if (orangeQuantity == appleQuantity) {
-                appleQuantity++;
+                orangeQuantity++;
             }
-            i--;
         }
-        System.out.println("Ilośc Jabłek po zakupie: " + appleQuantity);
-        System.out.println("Ilość pomarańczy po zakupie: " + orangeQuantity);
         if (appleQuantity > orangeQuantity) {
             int totalQuantity = appleQuantity - orangeQuantity;
             System.out.println("Minimalna różnica: " + totalQuantity);
@@ -35,11 +34,9 @@ public class Main {
             int totalQuantity = orangeQuantity - appleQuantity;
             System.out.println("Minimalna różnica: " + totalQuantity);
         }
+        System.out.println("Ilośc Jabłek po zakupie: " + appleQuantity);
+        System.out.println("Ilość pomarańczy po zakupie: " + orangeQuantity);
 
-        System.out.println("-----Kupuj dalej,łasuchu :) ----");
-        moneyQuantity = 0;
-        orangeQuantity = 0;
-        appleQuantity = 0;
 
     }
 }
