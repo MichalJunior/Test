@@ -29,12 +29,9 @@ public class Main {
         if (appleQuantity > orangeQuantity) {
             int totalQuantity = appleQuantity - orangeQuantity;
             System.out.println("Minimalna różnica: " + totalQuantity);
-        }
-        if (orangeQuantity > appleQuantity) {
+        } else {
             int totalQuantity = orangeQuantity - appleQuantity;
             System.out.println("Minimalna różnica: " + totalQuantity);
-        } else if (orangeQuantity == appleQuantity) {
-            System.out.println(0);
         }
         System.out.println("Ilośc Jabłek po zakupie: " + appleQuantity);
         System.out.println("Ilość pomarańczy po zakupie: " + orangeQuantity);
